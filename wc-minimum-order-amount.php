@@ -58,7 +58,7 @@
           'title'    => __( 'Checkout message', 'woocommerce' ),
           'desc'     => __( 'Show this message if the current order total is less than the defined minimum.', 'wc_minimum_order_amount' ),
           'id'       => 'wc_minimum_order_checkout_notification',
-          'default'  => 'Your current order total is %s — your order must be at least %.',
+          'default'  => 'Your current order total is %s — your order must be at least %s.',
           'type'     => 'text',
           'desc_tip' => true,
           'css'      => 'width:500px;',
