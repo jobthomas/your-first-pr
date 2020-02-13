@@ -39,7 +39,7 @@
           'default'           => '',
           'type'              => 'number',
           'desc_tip'          => true,
-          'css'               => 'width:70px; color: white;',
+          'css'               => 'width:70px;',
       );
 
       // Cart message
