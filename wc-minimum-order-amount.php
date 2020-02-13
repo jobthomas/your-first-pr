@@ -70,7 +70,7 @@
 
 /* Notices and checks */
 
-add_action( 'woocommerce_checkout_process', 'h_wc_minimum_order_amount' );
+add_action( 'woocommerce_checkout_process', 'hs_wc_minimum_order_amount' );
 add_action( 'woocommerce_before_cart' , 'hs_wc_minimum_order_amount' );
 
 function hs_wc_minimum_order_amount() {
