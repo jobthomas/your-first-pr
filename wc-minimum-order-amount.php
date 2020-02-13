@@ -49,7 +49,7 @@
           'id'       => 'wc_minimum_order_cart_notification',
           'default'  => 'Your current order total is %s — your order must be at least %s.',
           'type'     => 'text',
-          'desc_tip' => true,
+          'desc_tip' => 'true',
           'css'      => 'width:500px;',
       );
 
