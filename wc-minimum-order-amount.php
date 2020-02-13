@@ -39,7 +39,7 @@
           'default'           => '',
           'type'              => 'number',
           'desc_tip'          => true,
-          'css'               => 'width:70px; color: white;',
+          'css'               => 'width:70px;',
       );
 
       // Cart message
@@ -80,27 +80,27 @@ function hs_wc_minimum_order_amount() {
 
       // check if the minimum value has even been set
       if ($minimum) {
-      if ( WC()->cart->total > $minimum ) {
+        if ( WC()->cart->total > $minimum ) {
 
-        if( is_cart() ) {
+          if( is_cart() ) {
 
-            wc_print_notice(
-                sprintf( get_option( 'wc_minimum_order_cart_notification' ),
-                    wc_price( WC()->cart->total ),
-                    wc_price( $minimum )
-                ), 'error'
-            );
+              wc_print_notice(
+                  sprintf( get_option( 'wc_minimum_order_cart_notification' ),
+                      wc_price( WC()->cart->total ),
+                      wc_price( $minimum )
+                  ), 'error'
+              );
 
-        } else {
+          } else {
 
-            wc_add_notice(
-                sprintf( get_option( 'wc_minimum_order_checkout_notification' ) ,
-                    wc_price( WC()->cart->total ),
-                    wc_price( $minimum )
-                ), 'error'
-            );
-                }
-            }
+              wc_add_notice(
+                  sprintf( get_option( 'wc_minimum_order_checkout_notification' ) ,
+                      wc_price( WC()->cart->total ),
+                      wc_price( $minimum )
+                  ), 'error'
+              );
+                  }
+              }
         }
     }
 }
