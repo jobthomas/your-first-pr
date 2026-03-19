@@ -2,7 +2,7 @@
 
 Contributors: fernashes
 Tags: woocommerce, order, order amount, order total, minimum order, cart, woo
-Requires at least: 4.5.0
+Requires at least: 4.5.1
 Tested up to: 5.0
 Stable tag: 1.0
 WC requires at least: 3.0
